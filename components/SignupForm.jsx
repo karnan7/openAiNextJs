@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } f
 import { auth } from '@config/firebaseConfig'
 import { FcGoogle } from 'react-icons/fc'
 import { useRouter } from "next/navigation";
+import Link from 'next/link';
 
 const SignupForm = () => {
     const router = useRouter();
@@ -62,6 +63,9 @@ const SignupForm = () => {
             <div onClick={handleGoogleSignIn} className="google">
                <FcGoogle style={{fontSize:"20px"}}/>
                <p>Sign Up with Google</p>
+            </div>
+            <div className='auth-links'>
+                Already have an account?<Link href="/signin"> Sign In</Link>
             </div>
         </div>
     </section>

@@ -1,10 +1,17 @@
-import React from 'react'
+"use client"
+import React, { useContext } from 'react'
+import { UserContext } from '@context/UserContext';
+import { useRouter } from "next/navigation";
 
 const Home = () => {
-  return (
-    <div>
-        page
-    </div>
+    const context = useContext(UserContext);
+    const router = useRouter();
+
+  if(!context.user) {
+    return router.push('/signin')
+  }
+  return(
+    <>page</>
   )
 }
 
