@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;600;700&family=Inter:wght@400;500;700&family=Krona+One&family=Lavishly+Yours&family=Montserrat&family=Neucha&family=Oswald:wght@200;400;500;700&family=Playfair+Display&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Roboto:wght@100;300;400;900&display=swap');
+
+.app{
+    text-align: center;
+}
+
+.login-page{
+    height: 90vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.box h1{
+    color: #6FB555;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+
+.box form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.box form input{
+    height: 30px;
+    width: 250px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(36, 35, 35, 0.194);
+}
+
+.login-button{
+    padding: 15px 45px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #6FB555;
+    border: none;
+    box-shadow: -3px 1px 9px 0px rgba(0,0,0,0.8);
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.google{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    background-color: rgb(34, 30, 30);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
