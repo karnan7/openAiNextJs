@@ -7,6 +7,8 @@ const Home = () => {
     const context = useContext(UserContext);
     const router = useRouter();
 
+    const response = async
+
   if(!context.user) {
     return router.push('/signin')
   }
